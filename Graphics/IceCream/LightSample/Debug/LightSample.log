@@ -1,0 +1,8 @@
+﻿  LightSample.cpp
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(14): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(14): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(21): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(21): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(31): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\leith_000\documents\visual studio 2015\projects\lightsample\lightsample\lightsample.cpp(31): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+  LightSample.vcxproj -> c:\users\leith_000\documents\visual studio 2015\Projects\LightSample\Debug\LightSample.exe

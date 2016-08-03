@@ -1,0 +1,65 @@
+// sample data file for CMSC 335, Spring 2012
+// Nicholas Duchon
+// Jan 23, 2012
+// Parties format:
+//    p:<index>:<name>
+p : 10001 : Unity
+p : 10002 : Assemblage
+p : 10003 : Conglomeration
+
+// Creatures format:
+//    c:<index>:<type>:<name>:<party>:<empathy>:<fear>:<carrying capacity>
+c : 20001 : Woman   : Lucy   :10001 : 17 : 22 : 20
+c : 20002 : Woman   : Jane   :10001 : 22 : 15 : 25
+c : 20003 : Woman   : Nancy  :10003 : 80 : 44 : 20
+c : 20004 : Man     : James  :10002 : 35 : 13 : 50
+c : 20005 : Troll   : Fred   :10002 : 03 : 05 : 150
+c : 20006 : Warlock : Harry  :10003 : 05 : 06 : 0
+c : 20007 : Witch   : Morgana:10001 : 10 : 15 : 0
+
+// Treasures format:
+//    t:<index>:<type>:<creature>:<weight>:<value>
+// creature = 0 means noone is carrying that treasure at the moment
+t : 30001 : Gold : 20004 : 50 : 2000
+t : 30002 : Gold :     0 : 75 : 5000
+t : 30003 : Gems : 20002 : 10 : 10000
+t : 30004 : Silver : 20005 : 120 : 1000
+t : 30005 : Pocket lint : 20004 : 10 : 50
+t : 30006 : Bubblegum : 20004 : 15 : 200
+t : 30007 : Granite : 20005 : 600 : 100
+
+// Artifacts format:
+//    a:<index>:<type>:<creature>[:<name>]
+a : 40101 : Wand   : 20007 : ElderWand
+a : 40102 : Wand   : 20006
+a : 40201 : Potion : 20001
+a : 40301 : Stone  : 20004 : Rainbow
+a : 40302 : Stone  : 20003 : Granite
+a : 40303 : Stone  : 20005 : Amethyst
+a : 40401 : Scroll : 20007 : Crying
+a : 40402 : Scroll : 20006 : Liquid Fire
+a : 40403 : Scroll : 20001 : Summon Unicorn
+a : 40203 : Potion : 20004
+a : 40204 : Potion : 20006
+a : 40301 : Stone  : 20001 : Quartz
+a : 40302 : Stone  : 20002 : Hematite
+a : 40405 : Scroll : 20004 : Summon Squirrel
+a : 40103 : Wand   : 20004
+a : 40304 : Stone  : 20003 : Jade
+
+// Jobs for creatures
+// measure time in seconds
+//    j:<index>:<name>:<creature index>:<time>[:<required artifact type>:<number>]*
+j : 50001 : Heal Troll : 20007 : 4 : Wand : 1 : Stone : 2 : Scroll : 1
+j : 50002 : Strike Now : 20001 : 5 : Wand : 1
+j : 50003 : Read Mind  : 20003 : 25 : Stone : 1
+j : 50004 : Will Two   : 20004 : 30 : Scroll : 1
+j : 50005 : Zero All   : 20005 : 23 : Wand : 1 : Scroll : 1
+j : 50006 : Find Keys  : 20006 : 28 : Wand : 3 : Stone : 3 : Scroll : 1
+j : 50007 : Call Home  : 20003 : 15 : Scroll : 1
+j : 50008 : Sleep      : 20003 :  7 : Potion : 1
+j : 50009 : Wake       : 20006 : 16 : Wand : 1 : Potion : 1
+j : 50009 : Sit Down   : 20004 : 16
+j : 50009 : Sing       : 20005 : 16
+j : 50009 : Dance      : 20005 : 16 : Wand : 1 : Potion : 1
+j : 50009 : Levitate   : 20006 : 16 : Wand : 1 : Potion : 1
